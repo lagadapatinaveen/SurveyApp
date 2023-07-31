@@ -33,10 +33,9 @@ public class SurveyService {
     }
 
     //delete
-    public String deleteSurvey(int id) {
-        repository.deleteById(id);
-        return "deleted" + id;
-
+    public String deleteSurvey(int sid) {
+        repository.deleteById(sid);
+        return "department deleted";
     }
 
     // update

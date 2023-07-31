@@ -25,7 +25,7 @@ public class SurveyController {
         return service.saveSurvey(surveys);
     }
 
-    @GetMapping("survey")
+    @GetMapping("/survey")
     public List<Survey> findAllSurveys() {
         return service.getSurvey();
     }
@@ -41,8 +41,8 @@ public class SurveyController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deleteSurvey(int id) {
-        return service.deleteSurvey(id);
+    public String deleteSurvey(@PathVariable("id") int sid) {
+        return service.deleteSurvey(sid);
     }
 
 }

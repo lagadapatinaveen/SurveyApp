@@ -13,7 +13,6 @@ import javax.persistence.*;
 @Table(name="survey")
 public class Survey {
     @Id
-    @GeneratedValue
     private int sid;
     private String fname;
     private String lname;
