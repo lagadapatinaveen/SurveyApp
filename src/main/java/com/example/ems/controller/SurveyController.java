@@ -1,7 +1,6 @@
 package com.example.ems.controller;
 
 import com.example.ems.entity.Survey;
-import com.example.ems.repository.SurveyRepo;
 import com.example.ems.service.SurveyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

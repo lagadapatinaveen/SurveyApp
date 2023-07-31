@@ -1,18 +1,17 @@
 package com.example.ems.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Setter
+@RequiredArgsConstructor
 @Entity
 @Table(name="survey")
 public class Survey {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int sid;
     private String fname;
     private String lname;
